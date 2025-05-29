@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #f9fafb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  color: rgb(0, 0, 0);
+  line-height: 1.1;
+}
+.App p {
+  font-size: 1.2rem;
+  color: rgb(130, 130, 130);
+  margin-bottom: 3rem;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  /* padding: 1.2rem; */
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  box-sizing: border-box;
+}
+.card {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: centers;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 0; /* Asegura que no haya espacio interno*/
+  transition: background-color 1s, box-shadow 1s, transform 1s ease-in;
+}
+
+.card:hover {
+  /* background-color: #dbdbdb; */
+  box-shadow: 0 8px 24px rgb(0, 0, 0, 0.18);
+  transform: translateY(-8px) scale(1.03);
+}
+
+.title {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center; /* Alinea verticalmente h3 y p */
+  gap: 1rem;
+  justify-content: flex-start; /* Opcional: alinea a la izquierda */
+}
+.title h3,
+.title p {
+  margin: 0; /* Elimina márgenes por defecto */
+}
+.title h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+.title p {
+  font-size: 1rem;
+}
+
+.card img {
+  width: 100%;
+  display: block; /* Elimina el espacio inferior de la imagen */
+  border-radius: 10px 10px 0 0; /* Opcional: redondea solo la parte superior si quieres mantener el borde redondeado */
+  margin: 0; /* Elimina cualquier margen */
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
