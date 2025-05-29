@@ -22,7 +22,8 @@ Este proyecto es una galería de fotografías de paisajes, desarrollada con **Re
 
 ## 🖼 Vista previa
 
-(Coloca aquí una imagen de tu app o un GIF usando una herramienta como [loom.com](https://loom.com) o una captura de pantalla)
+![image](https://github.com/user-attachments/assets/187beb14-f0be-483c-95ba-821483618ac7)
+
 
 ## 📁 Estructura del proyecto
 
